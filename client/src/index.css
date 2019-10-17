@@ -2,11 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #58cced;
   background-color: #f2f2f2;
+  background: url("./img/movie.jpg");
+  background-size: cover;
 }
 
 .movie-card {
-  background-color: #fff;
+  background-color: rgba(128, 128, 128, 0.4);
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -14,15 +17,38 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  color: #ffdf00;
+  text-align: center;
+}
+
+.movie-card h2 {
+  font-family: "Bree Serif", serif;
+  font-size: 2.4rem;
+}
+
+.movie-card h3 {
+  font-family: "Bree Serif", serif;
+  font-size: 1.4rem;
+  color: red;
 }
 
 .movie-director {
   padding: 4px 0;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
+  color: red;
+}
+
+.movie-metascore {
+  font-size: 1.1rem;
+}
+
+.movie-star {
+  font-size: 1.9rem;
+  color: #ffdf00;
 }
 
 .saved-list {
-  background-color: #fff;
+  background-color: rgba(128, 128, 128, 0.8);
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -37,38 +63,73 @@ body {
 }
 
 .saved-list h3 {
-  margin-right: 10px;
+  margin: 10px;
+  font-family: "Trochut", cursive;
+  font-size: 28px;
+  color: #ffdf00;
 }
 
 .saved-movie {
   margin: 0 10px;
+  color: red;
+  border: 1px solid yellow;
+  font-family: "Trochut", cursive;
+  font-size: 22px;
+  font-weight: bold;
 }
 .saved-active {
   color: blue;
   border: 1px solid grey;
   padding: 5px;
+  font-family: "Trochut", cursive;
+  font-size: 22px;
+  font-weight: bold;
 }
 .save-wrapper {
   position: relative;
   width: 75%;
   margin: 1rem auto;
 }
+
+.save-wrapper a {
+  text-decoration: none;
+}
+
+.save-wrapper button {
+  margin-right: 10px;
+  padding: 10px;
+  color: red;
+  background-color: #ffdf00;
+}
+.save-wrapper button:hover {
+  font-weight: bold;
+  color: #ffdf00;
+  background-color: red;
+}
+
 .save-button {
   position: absolute;
   top: 25px;
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  color: red;
+  background-color: #ffdf00;
 }
 .save-button:hover {
-  background-color: green;
-  color: white;
+  font-weight: bold;
+  color: #ffdf00;
+  background-color: red;
 }
 
 .home-button {
   padding: 5px 10px;
-  background-color: lightskyblue;
+  background-color: red;
+}
+
+.home-button a {
+  text-decoration: none;
+  color: #ffdf00;
 }
 
 .movie-warning {
